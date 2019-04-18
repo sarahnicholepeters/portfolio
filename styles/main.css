@@ -1,0 +1,246 @@
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans: 100,300,400|Roboto:100,300,400,500,700');
+@import url("./about.css");
+@import url("./work.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+
+body {
+    /* padding: 0 25px; */
+    background-color: #fffcfc;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.logo-bar {
+    padding: 25px 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header {
+   color: #3f3f3f;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 0 0 50px 0;
+    
+}
+
+.nav-items__item {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1.4px;
+}
+
+.nav-items__item.title {
+    font-size: 45px;
+    font-weight: 600;
+    color: #3f3f3f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitle {
+    font-size: 14px !important;
+    font-weight: 400;
+    margin-top: 5px;
+    letter-spacing: 1.3px;
+}
+
+.tiles {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    /* min-height: 1200px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 50px;
+}
+
+.tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+    transition: 1s ease;
+    cursor: pointer;
+    padding: 25px;
+    min-height: 393px;
+}
+
+.tile--big {
+    background-color: #aaa;
+    grid-row: span 2;
+    grid-column: span 2;
+    
+}
+
+.tile--wide {
+    background-color: #555;
+    grid-column: span 3;
+}
+
+.slide--up {
+    transform-origin: bottom;
+}
+
+.slide--up:hover {
+    transform: scaleY(1.025);
+}
+
+.slide--right {
+    transform-origin: left;
+}
+
+.slide--right:hover {
+    transform: scaleX(1.05);
+}
+
+.slide--left {
+    transform-origin: right;
+}
+
+.slide--left:hover {
+    transform: scaleX(1.05);
+}
+
+.slide--down {
+    transform-origin: top;
+}
+
+.slide--down:hover {
+    transform: scaleY(1.05);
+}
+
+.tile__title {
+    font-size: 45px;
+    color: #333;
+    opacity: 1;
+    transition: .5s ease;
+    letter-spacing: 10px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.tile-image {
+    width: 100%;
+    height: auto;
+}
+
+/* .tile:hover .tile__title {
+    opacity: 1;
+} */
+
+.stagehand {
+    background-color: #C7F3E0;
+}
+
+.busyBus {
+    background-color: #9FAEF8;
+}
+
+.connect {
+    background-color: #D9BBF9;
+}
+
+.resume {
+    background-color: #FF8a93;
+}
+
+.about {
+    background-color: #FFF275;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    color: #333;
+}
+
+.icon {
+    margin: 0 10px;
+    cursor: pointer;
+    
+    /* transform: rotateX(360deg); */
+}
+
+.icon:hover {
+    /* transition: .5 ease; */
+    transform: rotate(360deg);
+    transition: .5s ease;
+}
+
+@media only screen and (max-width: 1250px) {
+    .tiles {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin: 25px auto;
+    }
+
+    .tile--wide {
+        grid-column: span 2;
+    }
+
+    .slide--up:hover, .slide--right, .slide--down, .slide--left {
+        transform: none !important;
+    }
+
+    /* .tile__title {
+        opacity: 1;
+    } */
+}
+
+@media only screen and (max-width: 650px) {
+    .logo-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tiles {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 400px);
+        /* margin: 25px auto; */
+    }
+
+    .tile {
+        grid-row: span 1;
+    }
+
+    .tile--wide {
+        grid-column: span 1;
+    }
+
+    .tile--big {
+        grid-column: span 1;
+    }
+
+    .option {
+        display: none;
+    }
+}
