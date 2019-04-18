@@ -1,10 +1,5 @@
 .work-header {
-    /* position: absolute; */
-    /* height: 50px; */
-    /* padding: 10px 15px; */
     background-color: #c7f3e0;
-    /* top: 0;
-    left: 0; */
     width: 100%;
     margin-bottom: 10px;
     
@@ -45,7 +40,6 @@
     position: absolute;
     left: 25px;
     margin-top: 15px;
-    /* font-weight: 300; */
 }
 
 .only-on-mobile {
@@ -100,20 +94,17 @@
 }
 
 .case-study-title {
-    /* margin: 5px 0; */
     color: #333;
     display: inline-block;
 }
 
 .title {
     font-size: 65px;
-    /* margin-top: 20px; */
 }
 
 .second-title {
     font-weight: 300;
     font-size: 50px;
-    /* margin-bottom: 10px; */
 }
 
 .roles {
@@ -131,10 +122,6 @@
 .container-section {
     display: flex;
 }
-
-/* .container-section.reverse {
-    flex-direction: row-reverse;
-} */
 
 .reverse {
     flex-direction: row-reverse !important;
@@ -156,10 +143,7 @@
     flex-direction: column;
 }
 
-/* .overview-image {
-    display: block;
-    margin: 0 auto;
-} */
+
 
 .paragraph {
     font-weight: 300;
@@ -168,9 +152,6 @@
     line-height: 1.8em;
 }
 
-/* .image {
-    height: auto;
-} */
 
 .overview-image {
     height: auto;
@@ -178,7 +159,6 @@
     width: 75%;
     text-align: center;
     margin: 5px auto;
-    /* max-height: 50%; */
 }
 
 .section-header {
@@ -195,9 +175,6 @@
     font-size: 25px;
 }
 
-/* .research {
-    display: flex;
-} */
 
 .research-section {
     width: 50%;
@@ -221,7 +198,6 @@ li {
 
 .research-content {
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     flex-direction: column;
 }
@@ -265,7 +241,6 @@ li {
     font-weight: 600;
     text-align: center;
     margin-bottom: 15px;
-    /* letter-spacing: .1em; */
 }
 
 .stories h2 {
@@ -294,12 +269,10 @@ li {
 
 .third-section {
     width: 33%;
-    /* max-width: 33%; */
 }
 
 .two-third-section {
     width: 67%;
-    /* max-width: 67%; */
 }
 
 .padding-small {
@@ -331,7 +304,6 @@ li {
 }
 
 .branding-image {
-    /* max-width: 200px; */
     margin: 40px auto;
 }
 
@@ -353,14 +325,6 @@ li {
     height: 100%;
     padding: 5px;
 }
-
-/* .pink-on-desktop {
-    background-color: #ffe6e6;
-} */
-
-/* .pallettes {
-    background-color: #d6ecef;
-} */
 
 .palette-color {
     width: 100px;
@@ -460,9 +424,6 @@ hr {
 }
 
 @media only screen and (max-width: 768px) {
-    /* .overview {
-        flex-direction: column;
-    } */
 
     .case-study-title.title {
         font-size: 40px;
@@ -503,7 +464,6 @@ hr {
     .palette-section {
         width: 100px;
         margin: 50px auto;
-        /* background-color: #fff; */
     }
 
     .overview-image {
@@ -517,7 +477,6 @@ hr {
     }
 
     .research-images {
-        /* flex-direction: row; */
         margin-bottom: 30px;
     }
 
@@ -547,8 +506,4 @@ hr {
     .palette-subtitle {
         font-size: 25px;
     }
-
-    /* .two-content-section.reverse {
-        flex-direction: column;
-    } */
 }

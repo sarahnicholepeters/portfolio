@@ -1,5 +1,4 @@
 .about-container {
-    /* height: 100px; */
     padding: 60px;
     line-height: 1.5em;
     color: #333;
@@ -7,8 +6,6 @@
     margin: 0 auto;
     margin-bottom: 50px;
 }
-
-
 
 .about-back {
     position: absolute;
@@ -27,7 +24,6 @@
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    /* flex-direction: column; */
 }
 
 .about-image {
@@ -39,8 +35,6 @@
 
 .about-content {
     font-size: 1.1em;
-    /* width: 65%;
-    display: inline-block; */
 }
 
 .only-on-mobile-about {
