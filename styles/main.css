@@ -63,6 +63,7 @@ a {
     font-weight: 400;
     margin-top: 5px;
     letter-spacing: 1.3px;
+    text-align: center;
 }
 
 .tiles {
@@ -254,6 +255,7 @@ a {
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .titles-left .title {
@@ -269,7 +271,7 @@ a {
 
 .titles-right .role {
     display: block;
-
+    margin-bottom: 10px;
 }
 
 .case-study-title {
@@ -315,6 +317,10 @@ a {
     min-height: 300px;
 }
 
+.overview-content .paragraph{
+    margin: 20px 0 40px 0;
+}
+
 .overview-images {
     display: flex;
     align-items: center;
@@ -327,7 +333,7 @@ a {
 .paragraph {
     font-weight: 300;
     margin: 20px 0;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     line-height: 1.8em;
 }
 
